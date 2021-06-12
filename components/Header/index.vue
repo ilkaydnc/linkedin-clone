@@ -1,5 +1,8 @@
 <script>
+import Search from '../Search.vue'
+
 export default {
+  components: { Search },
   name: 'Header',
 }
 </script>
@@ -14,6 +17,7 @@ export default {
           alt="Linkedin"
         />
       </NuxtLink>
+      <search />
     </div>
   </header>
 </template>
@@ -24,6 +28,8 @@ export default {
 }
 
 .header-inner {
+  display: flex;
+  gap: 16px;
   padding-top: 16px;
   padding-bottom: 16px;
 }
